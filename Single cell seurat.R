@@ -6,7 +6,7 @@ library(Seurat)
 library(tidyverse)
 
 #### Create gene expression matrix ####
-nsclc.sparse.m <- Read10X_h5(filename = 'C:/Users/fdb19195/Downloads/20k_NSCLC_DTC_3p_nextgem_Multiplex_count_raw_feature_bc_matrix.h5')
+nsclc.sparse.m <- Read10X_h5(filename = 'path/to/file')
 str(nsclc.sparse.m)
 cts <- nsclc.sparse.m$'Gene Expression'
 cts[1:10,1:10]
